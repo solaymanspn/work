@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/develop.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+<body>
+<div class="wrapper-main">
+
+    <div class="wrapper-up">
+            <!-- header -->
+    <section class="header">
+        <div class="logos">
+            <div class="logo-city">
+                <a href="#"><img src="/img/logo.png" alt=""></a>
+            </div>
+            <div class="logo-ict"><img src="/img/ict-division-logo.png" alt=""></div>
+            <div class="logo-digiBD"><img src="/img/digital-bangladesh-logo.png" alt=""></div>
+        </div>
+
+        <div class="banner"><img src="/img/pic-1.jpeg" alt=""></div>
+    </section>
+
+    <!-- nav bar -->
+    <div class="nav-bar">
+        <section class="nav">
+            <nav id="nav">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="notics.html">Notics</a></li>
+                    <li><a href="development.html">Development Pics</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Rules of Application</a></li>
+                </ul>
+            </nav>
+    
+            <div class="buttons">
+                <a href="#" class="login">Log In</a>
+                <a href="#" class="register">Register</a>
+                <div class="menu-reveal" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Pics of Development -->
+    <section class="development">
+        <div class="heading deve">
+            <h1>উন্নয়নের চিত্র</h1>
+        </div>
+
+        <section class="imagesContainer">
+
+
+            <div class="image" id="model-1-image">
+        
+                
+                <div id="model-1" onclick="imagePop(id);"> <i class="fa-solid fa-magnifying-glass"></i></i> </div>
+                <img src="/img/dev-pics/slogan1.png" alt="">
+     
+            
+            
+            </div>
+    
+            <div class="image" id="model-2-image">
+            
+    
+        
+
+        
+                    <div id="model-2" onclick="imagePop(id);"> <i class="fa-solid fa-magnifying-glass"></i> </div>
+                    <img src="/img/dev-pics/D-01.jpg" alt="">
+                
+            </div>
+    
+    
+            <div class="image" id="model-3-image" style="background-image: url(/img/dev-pics/D-02.jpg);">
+            
+              
+
+        
+                    <div id="model-3" onclick="imagePop(id);"><i class="fa-solid fa-magnifying-glass"></i></i> </div>
+                    <img src="/img/dev-pics/D-02.jpg" alt="">
+
+                
+                
+            </div>
+    
+    
+            <div class="image" id="model-4-image" style="background-image: url(/img/dev-pics/D-03.jpg);">
+            
+            
+
+        
+
+        
+                    <div id="model-4" onclick="imagePop(id);"><i class="fa-solid fa-magnifying-glass"></i></i> </div>
+                    <img src="/img/dev-pics/D-03.jpg" alt="">
+
+                
+                
+            </div>
+    
+            <div class="image" id="model-5-image" style="background-image: url(/img/dev-pics/D-android.jpeg);">
+            
+            
+        
+
+        
+                    <div id="model-5" onclick="imagePop(id);">  <i class="fa-solid fa-magnifying-glass"></i> </div>
+                    <img src="/img/dev-pics/D-android.jpeg" alt="">
+                
+                
+            </div>
+    
+            <div class="image" id="model-6-image" style="background-image: url(/img/dev-pics/1.jpg);">
+            
+            
+
+        
+
+                    <div id="model-6" onclick="imagePop(id);"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <img src="/img/dev-pics/1.jpg" alt="">
+                
+
+                
+                
+            </div>
+    
+    
+    
+            <div class="image" id="model-7-image" style="background-image: url(/img/dev-pics/2.jpg);">
+            
+ 
+        
+                    <div id="model-7" onclick="imagePop(id);"> <i class="fa-solid fa-magnifying-glass"></i></div>
+                    <img src="/img/dev-pics/2.jpg" alt="">
+                
+                
+            </div>
+    
+    
+        </section>
+    
+    
+    
+    
+        
+    
+    </section>
+
+    
+
+    </div>
+
+        <!-- footer -->
+<footer>
+    <section class="footer">
+        <div class="date-help">
+            <div class="date"><span id="date-today"></span> | <span>কারিগরি সহায়তায়: আইসিটি ডিভিশন</span></div>
+        </div>
+
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-android"></i></a>
+            <a href="#"><i class="fab fa-app-store-ios"></i></a>
+        </div>
+    </section>
+</footer>
+</div>
+
+<!-- Scroll Up button -->
+<button id="scrollUp" onclick="topFunction()" title="Go to Top">
+    <i class="fas fa-level-up-alt"></i>
+</button>
+
+
+<div class="imagePop" id="imagePopId">
+    
+    
+    <div class="click1" onclick="imageMoveLeft();"> <i class="fas fa-arrow-alt-circle-left fa-3x"></i></div>
+    <div class="click2" onclick="imageMoveRight();"> <i class="fas fa-arrow-alt-circle-right fa-3x"></i> </div>
+
+    <div class="close" onclick="imagePopNone();"> <i class="fas fa-times fa-3x"></i> </div>
+
+    <div class="imagePopUnder" onclick="imagePopNone();"></div>
+
+    <div class="imageContain" id="imageContainId" onclick="imageChange(id);"></div>
+
+</div>
+
+
+<!-- Script for bangla date -->
+<script>eval(function (p, a, c, k, e, d) { e = function (c) { return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36)) }; if (!''.replace(/^/, String)) { while (c--) { d[e(c)] = k[c] || e(c) } k = [function (e) { return d[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) { if (k[c]) { p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]) } } return p }('8 y(f,9,b){0 5=n x();0 h=5.z();0 k=5.A()+1;0 g=5.w();0 3=9;7(!3){3=\'i\'}e{3=3.v()}0 l=\'q://i.r/s/u/m/?t=\'+h+\'&D=\'+k+\'&Q=\'+g+\'&9=\'+3;j(l,8(K,a){7(a){0 c=J.F(f);0 4="";7(b){4=b+" "}4+=a.I;c.N=4}})}8 j(o,d){0 2=n E();2.L(\'M\',o,C);2.p=\'m\';2.P=8(){0 6=2.6;7(6==B){d(H,2.O)}e{d(6)}};2.G()}', 53, 53, 'var||xhr|lang|dateString|today|status|if|function|language|result|prefix||callback|else|containerId|yyyy|dd|bangla|getJSON|mm|jsonUrl|json|new|url|responseType|https|plus|api|day|converttobangladate|toLowerCase|getFullYear|Date|dateToday|getDate|getMonth|200|true|month|XMLHttpRequest|getElementById|send|null|FullDate|document|err|open|GET|innerText|response|onload|year'.split('|'), 0, {}))</script>
+<script>dateToday('date-today', 'bangla');</script>
+
+<script src="/JavaScript.js"></script>
+<script src="/popUp.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper-main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+section {
+    max-width: 1310px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: auto;
+}
+
+/* header */
+section.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+}
+
+section.header .logos {
+    width: 33.33%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+section.header .logos .logo-city {
+    max-width: 90px;
+    padding-right: 15px;
+}
+section.header .logos .logo-ict {
+    width: 140px;
+    padding-right: 15px;
+}
+section.header .logos .logo-digiBD {
+    max-width: 140px;
+    padding-right: 15px;
+}
+
+section.header .banner {
+    width: 66.66%;
+}
+
+
+/* Nav bar */
+.nav-bar {
+    width: 100%;
+    background: linear-gradient(to right, #FA8B05, #F02F17);
+}
+
+section.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.nav nav {
+    transition: ease-in-out 0.5s;
+}
+
+section.nav nav ul {
+    list-style: none;
+}
+
+section.nav nav ul li {
+    display: inline-block;
+    transition:ease 0.5s;
+    position: relative;
+}
+
+section.nav nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 18px 20px;
+    color: #fff;
+    
+
+}
+
+section.nav nav ul li:hover a::before {
+    background: #FB9203;
+    height: 6px;
+    width: 100%;
+    content: "";
+    top: -6px;
+    left: 0;
+    position: absolute;
+    border-radius: 3px 8px 0px 0px;
+    -webkit-transition: all 0.2s ease-out 0s;
+    -moz-transition: all 0.2s ease-out 0s;
+    -ms-transition: all 0.2s ease-out 0s;
+    -o-transition: all 0.2s ease-out 0s;
+    transition: all 0.2s ease-out 0s;
+}
+
+section.nav nav ul li:hover {
+    background: #FB9203;
+}
+
+section.nav .buttons {
+    display: flex;
+}
+
+section.nav .buttons a {
+    text-decoration: none;
+    display: block;
+    padding: 18px 23px;
+    color: #fff;
+}
+
+section.nav .buttons a.register {
+    padding-right: 0%;
+}
+
+section.nav .buttons a:hover {
+    text-decoration: underline;
+}
+
+section.nav .menu-reveal {
+    padding: 18px 23px;
+    color: #fff;
+    float: right;
+    display: none;
+}
+
+/* notice section */
+section.notice {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+section.notice .n-heading p {
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #F02F17;
+    border: 1px solid #DDDDDD;
+}
+
+section.notice .notice-txt {
+    color: #000;
+    padding: 15px 30px;
+    border: 1px solid #DDDDDD;
+    flex: 2;
+    overflow: hidden;
+}
+
+section.notice .notice-txt a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* brand-img section */
+.brand-img {
+    margin-top: 25px;
+}
+
+/* divions-sidebar section */
+section.divions-sidebar {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.divions-sidebar .divisions {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+
+section.divions-sidebar .divisions .division {
+
+}
+
+section.divions-sidebar .divisions .division .division-title {
+    border-bottom: 2px solid #F02F17;
+    color: #F02F17;
+    padding-left: 15px;
+}
+
+/* section.divions-sidebar .divisions .division .division-title h2 {
+
+} */
+
+section.divions-sidebar .divisions .division .division-content {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.divions-sidebar .divisions .division .division-content .left-content {
+    width: 50%;
+}
+
+section.divions-sidebar .divisions .division .division-content .right-content {
+    width: 50%;
+}
+
+
+section.divions-sidebar .divisions .division .division-content ul {
+    list-style: none;
+}
+
+section.divions-sidebar .divisions .division .division-content ul li {
+    display: block;
+    padding: 10px 10px;
+}
+
+section.divions-sidebar .divisions .division .division-content ul li a {
+    text-decoration: none; 
+    color: #000;
+    transition: ease 0.5s;
+}
+
+section.divions-sidebar .divisions .division .division-content ul li a:hover {
+    color: #FA8B05;
+}
+
+section.divions-sidebar .divisions .division .division-content ul li::before {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    margin-right: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #FB9203;
+    position: relative;
+    top: -1px;
+}
+
+
+
+
+
+
+
+/* sidebar */
+section.divions-sidebar .side-bar {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 30px;
+}
+
+section.divions-sidebar .side-bar .title {
+    border-bottom: 2px solid #F02F17;
+    color: #F02F17;
+    padding-left: 15px;
+    text-align: center;
+}
+
+section.divions-sidebar .side-bar form {
+    margin-top: 20px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, rgba(251, 146, 3, 1) 0%, rgba(240, 47, 23, 1) 56%, rgba(240, 47, 23, 1) 100%);
+    border-radius: 5px;
+}
+
+section.divions-sidebar .side-bar form input {
+    border-color: #cccccf;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    font-size: 13px;
+    height: 37px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 0;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+    outline: none;
+    border-radius: 6px;
+}
+
+
+section.divions-sidebar .side-bar form .inquiry-btn {
+    height: 35px;
+    background-color: #FB9203;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+section.divions-sidebar .side-bar .yt-video {
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-top: 20px;
+    position: relative;
+}
+
+section.divions-sidebar .side-bar iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.divions-sidebar .side-bar .app-link {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background: linear-gradient(45deg, rgba(251, 146, 3, 1) 0%, rgba(240, 47, 23, 1) 56%, rgba(240, 47, 23, 1) 100%);
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+}
+
+section.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.footer .date-help {
+    color: #fff;
+    padding: 15px 0;
+}
+
+section.footer .social i {
+    color: #fff;
+    padding: 15px;
+    font-size: 13px;
+    padding-right: 0;
+}
+
+/* Notice Page Css */
+/* notice-wrapper */
+section.notice-wrapper {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+section.notice-wrapper .notice-box {
+    width: 100%;
+    display: flex;
+}
+
+section.notice-wrapper .notice-box .notice-img {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+section.notice-wrapper .notice-box .notice-content {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+
+section.notice-wrapper .notice-box .notice-content .notice-ttl h3 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+section.notice-wrapper .notice-box .notice-content .notice-ttl h3 a {
+    text-decoration: none;
+    color: #000;
+}
+
+section.notice-wrapper .notice-box .notice-content .notice-date {
+    font-weight: 200;
+    font-size: 15px;
+    padding: 15px 0 15px 0;
+}
+
+section.notice-wrapper .notice-box .notice-content .notice-date i {
+    padding-right: 5px;
+}
+
+section.notice-wrapper .notice-box .notice-content .detail-btn {
+    padding: 15px 30px;
+    border-radius: 5px;
+    max-width: 140px;
+    border: 1px solid #ef1c1c;
+    text-align: center;
+    cursor: pointer;
+}
+section.notice-wrapper .notice-box .notice-content .detail-btn:hover {
+    background-color: #ef1c1c;
+}
+section.notice-wrapper .notice-box .notice-content .detail-btn:hover a {
+    color: #fff;
+}
+
+section.notice-wrapper .notice-box .notice-content .detail-btn a {
+    text-decoration: none;
+    color: #ef1c1c;
+}
+
+
+section.notice-wrapper .notice-box .notice-content .down-btn:hover {
+    background-color: #ef1c1c;
+    color: #fff;
+}
+
+
+/* CSS for Development Pics page */
+/* section.development {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+section.development .heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section.development .heading h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+section.development .pics-area {
+    display: flex;
+}
+
+section.development .pics-area .box {
+    border: 1px solid red;
+    max-width: 30%;
+    margin: 30px;
+    position: relative;
+    background-color: #000;
+    height: 323px;
+    overflow: hidden;
+}
+
+section.development .pics-area .box img {
+
+}
+
+section.development .pics-area .box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: #ef1c1c;
+    padding: 20px;
+    border-radius: 50%;
+} */
+
+
+
+#scrollUp {
+    background: #4b0f02;
+    height: 50px;
+    width: 50px;
+    right: 60px;
+    bottom: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 47px;
+    position: fixed;
+    z-index: 2147483647;
+    cursor: pointer;
+    display: none;
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+#scrollUp:hover {
+    background-color: #F02F17;
+}
+
+
+
