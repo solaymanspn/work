@@ -1,5 +1,5 @@
-var imageUrls   = ['url("/img/dev-pics/slogan1.png")', 'url("/img/dev-pics/D-01.jpg")',
-                  'url("/img/dev-pics/D-02.jpg")', 'url("/img/dev-pics/D-03.jpg")', 'url("/img/dev-pics/D-android.jpeg")', 'url("/img/dev-pics/1.jpg")', 'url("/img/dev-pics/2.jpg")']
+var imageUrls   = ['url("https://solaymanspn.github.io/work/img/dev-pics/slogan1.png")', 'url("https://solaymanspn.github.io/work/img/dev-pics/D-01.jpg")',
+                  'url("https://solaymanspn.github.io/work/img/dev-pics/D-02.jpg")', 'url("https://solaymanspn.github.io/work/img/dev-pics/D-03.jpg")', 'url("https://solaymanspn.github.io/work/img/dev-pics/D-android.jpeg")', 'url("https://solaymanspn.github.io/work/img/dev-pics/1.jpg")', 'url("https://solaymanspn.github.io/work/img/dev-pics/2.jpg")']
 
 
 
